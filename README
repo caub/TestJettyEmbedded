@@ -1,2 +1,3 @@
-mvn clean package
-mvn -X embedded-glassfish:run -l logs
+mvn clean compile
+#mvn exec:java
+mvn jetty:run

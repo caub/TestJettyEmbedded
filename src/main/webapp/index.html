@@ -6,5 +6,29 @@
 </head>
 <body>
 Will you work?
+
+<script>
+
+//var host = "http://mongo-cli-java.herokuapp.com/";
+var host = location.href;
+var ws = new WebSocket(host.replace('http','ws')+'chat/tfxftx');
+
+ws.onopen    = function()  {
+  console.log('[*] open');
+};
+
+ws.onmessage = function(e) {
+  console.log('>',e.data);
+};
+ws.onclose   = function()  {
+  console.log('[*] close');
+};
+
+//ws.send("test")
+
+</script>
+
+
+
 </body>
 </html>
