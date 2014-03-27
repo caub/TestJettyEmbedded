@@ -1,2 +1,2 @@
 mvn clean package
-mvn -X embedded-glassfish:run
+mvn -X embedded-glassfish:run -l logs
